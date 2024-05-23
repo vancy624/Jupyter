@@ -3,9 +3,9 @@ import seaborn as sns
 import matplotlib.pyplot as plt 
 import numpy as np
 
-#檔案讀取，並忽略行列標題
-df_temp = pd.read_csv(r"C:\Users\brigh\202404_TEMP.csv", header=None)
-df_rh = pd.read_csv(r"C:\Users\brigh\202404_RH.csv", header=None)
+#檔案讀取，並忽略行列標題，並從第二列資料開始讀取
+df_temp = pd.read_csv(r"C:\Users\brigh\202404_TEMP.csv", header=None, usecols=range(1, 24))
+df_rh = pd.read_csv(r"C:\Users\brigh\202404_RH.csv", header=None, usecols=range(1, 24))
 #print(df_temp.columns)
 
 # 將DataFrame中的所有值轉換成數字，非數字的資料會被轉成NaN，再將NaN轉成0
