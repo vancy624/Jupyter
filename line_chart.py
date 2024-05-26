@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 #檔案讀取
-df = pd.read_csv("data_test.csv")
+df = pd.read_csv(r"C:\Users\brigh\data_test.csv")
 #print(df.columns)
 
 
